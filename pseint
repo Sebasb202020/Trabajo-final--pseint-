@@ -1,1 +1,57 @@
 pseint trabajo final progra 1
+
+
+SubAlgoritmo moduloDeLlamada( )
+	
+	Definir generarLlamada Como caracter;
+	Definir moduloAgenda Como caracter;
+	Definir numeroDigitar Como Real;
+	Definir k, m,i,j,filasMatriz, columnasMatriz,valorAleatorio, repetido, numeroAleatorio,matriz   Como Real;
+	Escribir "1 Llamar contacto";
+	Escribir "2 Digite el numero";
+	leer generarLlamada;
+	Segun generarLlamada Hacer
+		1:
+			Escribir "Ingrese el nombre de la persona que quiere llamar";
+			Leer moduloAgenda;
+			Dimension matriz[k,m];
+			Para k=0  Hasta i Con Paso 1 Hacer
+				Para m = 0 Hasta j Con Paso 1 Hacer
+					Si valorAleatorio = matriz[k,m] Entonces
+						repetido = 1;
+						Escribir "Iniciando llamada";
+						numeroAleatorio= Aleatorio(1,10);
+						Imprimir "...";
+						Imprimir "...";
+						Imprimir "...";
+						Imprimir "...";
+						Imprimir "La llamada a finalizado";
+						Imprimir "La llamada tuvo una duracion de:" + ConvertirATexto(numeroAleatorio);
+						Imprimir ConvertirATexto(valorAleatorio);
+					SiNo
+						repetido = 0; 
+						Imprimir "El nombre que usted ingreso es no existe";
+					Fin Si
+				Fin Para
+			Fin Para
+		2:
+			Escribir "Digite el numero que quiere llamar";
+			Leer numeroDigitar;
+			Imprimir "Iniciando la llamada";
+			Imprimir "...";
+			Imprimir "...";
+			Imprimir "...";
+			Imprimir "...";
+			Imprimir "La llamada a finalizado";
+			Imprimir "La llamada tuvo una duracion de:" ConvertirATexto(numeroAleatorio);
+			Imprimir ConvertirATexto(numeroDigitar) + "Este es el numero que digito";
+
+		De Otro Modo:
+			Imprimir "El numero que usted digito no esta dentro de los parametros";
+	Fin Segun
+Fin SubAlgoritmo
+
+Algoritmo ModuloDeLammada
+	
+	
+FinAlgoritmo
