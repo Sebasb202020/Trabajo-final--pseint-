@@ -1,6 +1,75 @@
 pseint trabajo final progra 1
 
 
+//modulo Inico Dispositivo
+Algoritmo moduloIniciarDispositivo
+	//Declarar Variables
+	Definir mensjInicio, agenda, aplicacion, contacto, nombre, telefono, valor como Caracter;
+	Definir i, j, k, l, nombres, telefonos  Como Entero;
+	//Inicializar variables
+	mensjInicio = "Cargando datos por favor espere...";
+	k = 0;
+	l = 0;
+	valor = "';
+	Dimension agenda[50,2];
+	//Inicializar Arreglos con valores por defecto
+	Dimension nombre[6];
+	Dimension telefono[6];
+	Dimension aplicacion[6];
+	//Proceso de inicio
+	Mostrar  mensjInicio;
+	//Carga de datos, (5 contacto son precargados en la agenda).
+	//carga de nombres 
+	nombre[0] = "Nombre    "; //Remover este valor una vez que ya no sea necesaio(cuando se vayan a unir los modulos)
+	nombre[1] = "Maria     ";
+	nombre[2] = "Pedro     ";
+	nombre[3] = "Ana       ";
+	nombre[4] = "Jose      ";
+	nombre[5] = "Laura     ";
+	//carga de telefonos
+	telefono[0] = "Telefono"; //Remover este valor una vez que ya no sea necesaio(cuando se vayan a unir los modulos)
+	telefono[1] = "12345678";
+	telefono[2] = "23456789";
+	telefono[3] = "34567891";
+	telefono[4] = "45678912";
+	telefono[5] = "56789123";
+	//Lista de aplicaciones
+	aplicacion[0] = "Whatsapp";
+	aplicacion[1] = "Facebook";
+	aplicacion[2] = "Agenda";
+	aplicacion[3] = "Marcador";
+	aplicacion[4] = "Banco";
+	aplicacion[5] = "Instagram";
+	//llenado de agenda con valores por defecto
+	Para i = 0 Hasta 5 Con Paso 1 Hacer
+		Para j = 0 Hasta 1 Con Paso 1 Hacer
+			Imprimir "";
+			valor =  nombre[k];
+			k = k + 1;
+			agenda[i,j] = valor; 
+			Imprimir agenda[i,j] + " "Sin Saltar; //Remover una vez que ya no sea necesario (Imprimir usado para pruebas.) 
+			j = j + 1;
+			valor = telefono[l];
+			l = l + 1;
+			agenda[i,j] = valor;
+			Imprimir agenda[i,j] + " "Sin Saltar; //Remover una vez que ya no sea necesario (Imprimir usado para pruebas.)
+		Fin Para
+	Fin Para
+	Imprimir "";
+	Imprimir "";
+	//Cargado de applicaicones por defecto
+	Para i = 0 Hasta 4 Con Paso 1 Hacer
+		Para j = 0 Hasta 1 Con Paso 1 Hacer
+			
+		Fin Para
+	Fin Para
+	
+
+
+	
+FinAlgoritmo
+
+
 SubAlgoritmo moduloDeLlamada( )
 	
 	Definir generarLlamada Como caracter;
